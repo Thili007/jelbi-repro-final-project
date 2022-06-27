@@ -6,7 +6,12 @@
 @use "app-info-container";
 @use "last-info-container";
 @use "media-quary";
-// This is where you can import other stylesheets or write your scss code
+@use "station_reset";
+@use "station_header";
+@use "station_main";
+@use "station_map";
+@use "station_gallery";
+@use "faq";
 @use 'home-page';
 @use 'media-queries';
 
