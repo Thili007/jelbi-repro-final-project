@@ -1,0 +1,55 @@
+
+
+
+.header__stations{
+   //background-image:url("https://kiezerfahren.berlin/wp-content/uploads/2020/07/JLB-Station_Kampagnenmotiv_Copyright-BVG-Jelbi.jpg");*/@at-root
+   background-image: url("https://www.jelbi.de/wp-content/uploads/2020/06/JLB_Header-Jelbi-Station_ko.jpg");
+    background-position:top;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:25vw;
+    border-bottom: 2px solid grey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__heading{
+        max-width:50%;
+    
+        &-main img{
+            width: 100%;    
+            animation:fadeTop .5s cubic-bezier(.77,0,.175,1) 1;
+        }
+
+
+
+    &-sub{
+        color: #f0d722;
+        margin: 1rem; 
+        font-size:3.8vw;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        word-wrap: break-word;
+
+    }
+
+    }
+}
+@keyframes fadeTop {
+
+    0%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0px);
+        opacity: .5;
+    }
+    100%{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    
+}
