@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-// This is where you can import other stylesheets or write your scss code
 
-@use 'station_reset';
-@use 'station_header';
 
-@use 'station_main';
 
-@use 'station_map';
-@use 'station_gallery';
-
-@use 'faq';
-=======
 @use "video-container";
 @use "second-section";
 @use "base";
@@ -36,6 +26,5 @@ $theme-colors: (
     "jelbi-light-gray": #EAEAEA,
 );
 
->>>>>>> 1317e8aae5e3071fa763e0e9894c84f0c9ba0f0a
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
