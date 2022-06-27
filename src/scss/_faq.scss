@@ -5,6 +5,46 @@ body{
     font-family: 'Transit reg',Helvetica,Arial,Lucida,sans-serif;
 }
 
+
+
+
+//navbar and main header
+
+.navbar-nav {
+  margin-left: auto;
+}
+.nav-link {
+  margin-left: 1rem;
+}
+.navbar-nav,
+.nav-link {
+  padding-left: 1rem;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  background-color: #f0d82257;
+  border: 1px dashed #262626;
+}
+.logo {
+  margin: 1rem 0;
+}
+
+@media (min-width: 980px) {
+  .logo {
+    margin-left: 7rem;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}
+@media (max-width: 980px) {
+  header {
+    position: static;
+  }
+}
+
 //faq page header
 .faq__header{
     background-image: url("https://www.jelbi.de/wp-content/uploads/2019/08/190829_LP-Startscreen-so.png");
