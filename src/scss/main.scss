@@ -7,4 +7,16 @@
 @use "last-info-container";
 @use "media-quary";
 // This is where you can import other stylesheets or write your scss code
+@use 'home-page';
+@use 'media-queries';
+
+$theme-colors: (
+    "jelbi-yellow": #F0D722,
+    "jelbi-pink": #BC6194,
+    "black": #000000,
+    "jelbi-gray": #262626,
+    "jelbi-light-gray": #EAEAEA,
+);
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
