@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // This is where you can import other stylesheets or write your scss code
 
 @use 'station_reset';
@@ -9,5 +10,32 @@
 @use 'station_gallery';
 
 @use 'faq';
+=======
+@use "video-container";
+@use "second-section";
+@use "base";
+@use "back-to-top-container";
+@use "form-sign-up-form";
+@use "app-info-container";
+@use "last-info-container";
+@use "media-quary";
+@use "station_reset";
+@use "station_header";
+@use "station_main";
+@use "station_map";
+@use "station_gallery";
+@use "faq";
+@use 'home-page';
+@use 'media-queries';
+
+$theme-colors: (
+    "jelbi-yellow": #F0D722,
+    "jelbi-pink": #BC6194,
+    "black": #000000,
+    "jelbi-gray": #262626,
+    "jelbi-light-gray": #EAEAEA,
+);
+
+>>>>>>> 1317e8aae5e3071fa763e0e9894c84f0c9ba0f0a
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
