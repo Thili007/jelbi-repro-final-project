@@ -1,5 +1,5 @@
 {
-  "name": "jelbi repro final project",
+  "name": "jelbi-repro-final-project",
   "version": "1.0.0",
   "description": "Final project of UIB Module",
   "main": "index.html",
@@ -20,6 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.3",
     "scss": "^0.2.4"
   },
   "devDependencies": {

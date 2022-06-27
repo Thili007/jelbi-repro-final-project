@@ -1,2 +1,10 @@
+@use "video-container";
+@use "second-section";
+@use "base";
+@use "back-to-top-container";
+@use "form-sign-up-form";
+@use "app-info-container";
+@use "last-info-container";
+@use "media-quary";
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
