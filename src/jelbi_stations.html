@@ -57,15 +57,15 @@
     <!--<section class="main-container-stations">-->
 
 <!-- jelbi station header-->
-<section class="header__stations">
-  <div class="header__stations__heading">
+    <section class="header__stations">
+    <div class="header__stations__heading">
 
-  <div class="header__stations__heading-main">
+    <div class="header__stations__heading-main">
     <img src="https://www.jelbi.de/wp-content/uploads/2019/08/190829_Jelbi-WM-ye-so.png" alt="jelbi-logo">
   </div>
   <h3 class="header__stations__heading-sub">THE stations.</h3>
 </div>
-</section>
+      </section>
 
 
 <!-- jelbi station main content -->
@@ -160,7 +160,7 @@
 
 <!-- jelbi station map -->
 
-<article class="stations__map">
+    <article class="stations__map">
   <h3 class="stations__map-heading">All Jelbi hubs at one glance on the map:</h3>
   <div class="stations__map-mapframe" id="map" style="width: 75%; height:75%; border: 1px solid #AAA;">
 
@@ -169,13 +169,13 @@
 <!-- add scripts from both json files-->
 <script type='text/javascript' src='./scripts/maps/leaf-demo.js'></script>
 <script type='text/javascript' src='./scripts/maps/markers.js'></script>
-</article>
+    </article>
 
 
 
 
 <!--jelbi station  gallery-->
-<section class="stations__bottom_gallery">
+      <section class="stations__bottom_gallery">
 
   <div class="stations__slideshow">
     <div class="stations__slideshow-container">
@@ -257,15 +257,51 @@
         <span class="dot" onclick="currentSlide(8)"></span> 
         <span class="dot" onclick="currentSlide(9)"></span>
       </div>
-      <!-- back to top button -->
-     
+      <!-- script -->
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
     </section>
 
     <div class="back-to-top-wrapper">
       <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"></a>
     </div>
-    </main>
+   
+  </main>
+     
+
+     
+      
     
+
+ 
+
+
       <footer>
         <nav class="d-flex flex-wrap justify-content-center p-4 bg-jelbi-gray footer-links">
           <a href="">Contact</a>
@@ -276,43 +312,7 @@
         </nav>
       </footer>
 
-      <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
-      
-        
-
- 
-
-
-
-
-   
+    
 
 
     <!-- Custom scripts, edit above this line -->
