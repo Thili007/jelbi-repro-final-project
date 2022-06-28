@@ -77,4 +77,12 @@
       header {
         position: static;
       }
+
+      .back-to-top-wrapper-2 {
+        position: absolute;
+        right: 0.25rem;
+        bottom: 0.5rem;
+        width: 4em;
+        pointer-events: none;
+      }
     }

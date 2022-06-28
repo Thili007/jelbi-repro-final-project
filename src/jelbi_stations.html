@@ -28,6 +28,7 @@
     integrity="sha384-RFZC58YeKApoNsIbBxf4z6JJXmh+geBSgkCQXFyh+4tiFSJmJBt+2FbjxW7Ar16M"
     crossorigin="anonymous"
   ></script>
+  <script src=“https://kit.fontawesome.com/4f649e2dc1.js” crossorigin=“anonymous”></script>
 
   </head>
   <body>
@@ -52,10 +53,8 @@
     </nav>
   </header>
 
-    <section class="main-container-stations">
-
 <!-- jelbi station header-->
-<section class="header__stations">
+    <section class="header__stations">
   <div class="header__stations__heading">
 
   <div class="header__stations__heading-main">
@@ -63,12 +62,12 @@
   </div>
   <h3 class="header__stations__heading-sub">THE stations.</h3>
 </div>
-</section>
+    </section>
 
 
 <!-- jelbi station main content -->
 
-<main class="main__stations">
+    <section class="main__stations">
   <h2 class="main__stations__heading">The movement movement.</h2>
   <p class="main__stations__paragraph">Jelbi stations bring sharing services to S-Bahn and subway stations. Car, bicycle or scooter: no matter which you choose, here you can hire, return and charge vehicles. Jelbi stations also act as stops for taxis and on-demand shuttles. All in one place at the Jelbi station.</p>
   <p class="main__stations__paragraph">Here, you can select a vehicle to meet your needs and conveniently book it in the Jelbi app. It means a seamless door-to-door experience, e.g. taking the underground to a Jelbi station and switching to a bicycle for the last mile home.</p>
@@ -135,7 +134,7 @@
 
 
 
-  <script>
+    <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
     
@@ -151,32 +150,33 @@
       });
     }
     </script>
-</main>
+    </section>
 
 
 
 
 <!-- jelbi station map -->
 
-<article class="stations__map">
-  <h3 class="stations__map-heading">All Jelbi hubs at one glance on the map:</h3>
-  <div class="stations__map-mapframe" id="map" style="width: 75%; height:75%; border: 1px solid #AAA;">
+    <article class="stations__map">
+        <h3 class="stations__map-heading">All Jelbi hubs at one glance on the map:</h3>
+        <div class="stations__map-mapframe" id="map" style="width: 75%; height:75%; border: 1px solid #AAA;">
 
-  </div>
+        </div>
 
 <!-- add scripts from both json files-->
-<script type='text/javascript' src='./scripts/maps/leaf-demo.js'></script>
-<script type='text/javascript' src='./scripts/maps/markers.js'></script>
-</article>
+      <script type='text/javascript' src='./scripts/maps/leaf-demo.js'></script>
+      <script type='text/javascript' src='./scripts/maps/markers.js'></script>
+    </article>
 
 
 
 
 <!--jelbi station  gallery-->
-<section class="stations__bottom_gallery">
 
-  <div class="stations__slideshow">
-    <div class="stations__slideshow-container">
+    <section class="stations__bottom_gallery">
+
+      <div class="stations__slideshow">
+        <div class="stations__slideshow-container">
 
       <div class="mySlides">
         <div class="numbertext">1 / 9</div>
@@ -242,9 +242,9 @@
       <a class="stations__slideshow-prev" onclick="plusSlides(-1)">❮</a>
       <a class="stations__slideshow-next" onclick="plusSlides(1)">❯</a>
       
-      </div>
+        </div>
      
-      <div class="slideshow_dots">
+        <div class="slideshow_dots">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
@@ -254,57 +254,52 @@
         <span class="dot" onclick="currentSlide(7)"></span> 
         <span class="dot" onclick="currentSlide(8)"></span> 
         <span class="dot" onclick="currentSlide(9)"></span>
-      </div>
-    
-      <footer>
-        <nav class="d-flex flex-wrap justify-content-center p-4 bg-jelbi-gray footer-links">
-          <a href="">Contact</a>
-          <a href="">Press</a>
-          <a href="">Imprint</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Declaration of Accessibility</a>
-        </nav>
-      </footer>
+        </div>
 
-      <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
       
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
-      
-        
+        <div class="back-to-top-wrapper-2">
+          <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"></a>
+        </div>
 
- 
+  <footer>
+  <nav class="d-flex flex-wrap justify-content-center p-4 bg-jelbi-gray footer-links">
+    <a href="">Contact</a>
+    <a href="">Press</a>
+    <a href="">Imprint</a>
+    <a href="">Privacy Policy</a>
+    <a href="">Declaration of Accessibility</a>
+  </nav>
+  </footer>
+</section>
 
-
-
-
-    </section>
-
-
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+</script>
     <!-- Custom scripts, edit above this line -->
    <!--script for bootstrap-->
 
