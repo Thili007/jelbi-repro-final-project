@@ -3,9 +3,11 @@
   // video containers
   .video-sections {
     height: 70%;
+    z-index: 5000;
   }
   .ratio {
     height: 420px;
+    z-index: 5000;
   }
 }
 
@@ -14,9 +16,11 @@
   // video containers
   .video-sections {
     height: 70%;
+    z-index: 5000;
   }
   .ratio {
     height: 600px;
+    z-index: 5000;
   }
 
   //   paragraph containers
@@ -69,6 +73,7 @@
   }
   .ratio {
     height: 800px;
+    z-index: 5;
   }
   .app-info-img {
     width: 320px;
