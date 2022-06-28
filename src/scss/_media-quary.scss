@@ -3,9 +3,15 @@
   // video containers
   .video-sections {
     height: 70%;
+    // z-index: 4000;
   }
   .ratio {
     height: 420px;
+    background-image: url(../images/BVG-Jelbi_cover-RGB.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 5000;
   }
 }
 
@@ -14,9 +20,15 @@
   // video containers
   .video-sections {
     height: 70%;
+    z-index: 4000;
   }
   .ratio {
     height: 600px;
+    background-image: url(../images/BVG-Jelbi_cover-RGB.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 5000;
   }
 
   //   paragraph containers
@@ -69,6 +81,7 @@
   }
   .ratio {
     height: 800px;
+    z-index: 5;
   }
   .app-info-img {
     width: 320px;

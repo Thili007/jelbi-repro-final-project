@@ -1,16 +1,25 @@
 .fixed-background {
-    position: relative;
-    background: url(../images/Jelbi_Fullscreencover_06.png) fixed no-repeat;
+  background: url(../images/Jelbi_Fullscreencover_06.png) fixed no-repeat;
 }
-main {
-  position: relative;
+.fixed-background-2 {
+  background: url(../images/Jelbi_Fullscreencover_06.png) fixed no-repeat;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    ". . main ."
+    "footer footer footer footer";
+}
+header {
+  grid-area: header;
+}
+.footer-reg {
+  grid-area: footer;
+}
+.main-reg {
+  grid-area: main;
 }
 
 .registration-form {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   padding: 50px 0;
 }
 
@@ -103,6 +112,10 @@ main {
 .create-account:hover {
   text-decoration: none;
   opacity: 0.6;
+}
+
+.footer-reg {
+  bottom: 0;
 }
 
 // tablet display
